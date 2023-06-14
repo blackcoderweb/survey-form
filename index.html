@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Software Developer Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Software Developer Survey Form</h1>
+            <p id="description">Thank you for taking the time to complete the application form</p>
+        </header>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label"> Years</label>
+                <input type="number" id="number" placeholder="Years of experience" required min=0 max=20>
+            </fieldset>
+            <fieldset>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <optgroup>
+                        <option>Select one</option>
+                        <option>Front End</option>
+                        <option>Back End</option>
+                        <option>Full Stack</option>
+                    </optgroup>
+
+                </select>
+
+                <p>Which work modality do you prefer?</p>
+
+                <input type="radio" name="radio-work" value="on-site" required> <label>On site</label></input><br>
+                <input type="radio" name="radio-work" value="hybrid" required> <label>Hybrid</label></input><br>
+                <input type="radio" name="radio-work" value="remote" required> <label>Remote</label></input>
+
+            </fieldset>
+            <fieldset>
+                <p>Select your English level</p>
+                <select id="dropdown">
+                    <optgroup>
+                        <option>Select one</option>
+                        <option>Basic</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                        <option>Expert</option>
+                    </optgroup>
+
+                </select>
+
+                <p>Select one or more technologies you are familiar with</p>
+
+                <input type="checkbox" value="html"> <label>HTML</label></input><br>
+                <input type="checkbox" value="css"> <label>CSS</label></input><br>
+                <input type="checkbox" value="javascript" value="remote"> <label>JavaScript</label></input><br>
+                <input type="checkbox" value="java" value="remote"> <label>Java</label></input><br>
+                <input type="checkbox" value="python"> <label>Python</label></input><br>
+                <input type="checkbox" value="php"> <label>PHP</label></input><br>
+
+                <input type="checkbox" value="react"> <label>React</label></input><br>
+                <input type="checkbox" value="angular"> <label>Angular</label></input><br>
+                <input type="checkbox" value="vue"> <label>Vue</label></input><br>
+                <input type="checkbox" value="next"> <label>NextJS</label></input><br>
+                <input type="checkbox" value="node"> <label>NodeJS</label></input><br>
+                <input type="checkbox" value="laravel"> <label>Laravel</label></input><br>
+                <input type="checkbox" value="django"> <label>Django</label></input><br>
+                <input type="checkbox" value="mysql"> <label>MySQL</label></input><br>
+                <input type="checkbox" value="oracle"> <label>Oracle</label></input><br>
+                <input type="checkbox" value="mongo"> <label>MongoDB</label></input>
+
+            </fieldset>
+
+            <p>Your comments will help us to improve our work</p>
+            <textarea placeholder="Enter your comment here..." rows=5 cols=30></textarea>
+
+            <input type="submit" id="submit" value="Submit"></input>
+        </form>
+    </div>
+
+</body>
